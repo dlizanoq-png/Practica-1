@@ -1,4 +1,11 @@
-package PACKAGE_NAME;
+public class Administrador extends Usuario {
 
-public class Administrador {
+    public Administrador(String nombreCompleto, String cedula, String correoElectronico, String contrasenia) {
+        super(nombreCompleto, cedula, correoElectronico, contrasenia);
+    }
+
+    @Override
+    public String toString() {
+        return "[Administrador] " + super.toString();
+    }
 }
